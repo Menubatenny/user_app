@@ -2,7 +2,7 @@
 
 <h1>Confirm Your Order</h1>
 
-<table>
+<table  class="table table-success table-striped">
   <thead>
     <tr>
       <th>Product name</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= cart.product_name %></td>
         <td><%= cart.quantity %></td>
-        <td><%= link_to 'Show', cart %></td>
-        <td><%= link_to 'Edit', edit_cart_path(cart) %></td>
-        <td><%= link_to 'Destroy', cart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+        <td><%= link_to 'Edit', edit_cart_path(cart), class:"btn btn-outline-secondary" %></td>
+        <td><%= link_to 'Delete', cart, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-outline-secondary" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -27,4 +27,4 @@
 <br>
 
 
-<%= link_to 'Confirm', new_detail_path %>
+<%= link_to 'Confirm', new_detail_path, class:"btn btn-info" %>

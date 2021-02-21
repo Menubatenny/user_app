@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Product name:</strong>
-  <%= @cart.product_name %>
-</p>
 
+  <strong>Product name:</strong>
+  
+  <%= @cart.product_name %>
+  <h1 class="mb-5"> </h1>
+</p>
+<h1 class="mb-3"> </h1>
 <p>
   <strong>Quantity:</strong>
   <%= @cart.quantity %>
 </p>
-<%= link_to 'Back',new_cart_path %>  |  
-<%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Next',carts_path %> 
+<h1 class="mb-5"> </h1>
+<%= link_to 'Back',new_cart_path, class:"btn btn-info" %>   
+<%= link_to 'Edit', edit_cart_path(@cart), class:"btn btn-info" %> 
+<%= link_to 'Next',carts_path, class:"btn btn-info" %> 
+

@@ -3,17 +3,19 @@
 <p>
   <strong>Pickup address:</strong>
   <%= @detail.pickup_address %>
+  <h1 class="mb-3"> </h1>
 </p>
-
+<h1 class="mb-5"> </h1>
 <p>
   <strong>Deliver address:</strong>
   <%= @detail.deliver_address %>
+  <h1 class="mb-3"> </h1>
 </p>
 
+<h1 class="mb-5"> </h1>
+<%= link_to 'Edit', edit_detail_path(@detail), class:"btn btn-info" %>  
 
-<%= link_to 'Edit', edit_detail_path(@detail) %>  |
-
-<%= link_to 'Next', details_path  %>
+<%= link_to 'Next', details_path, class:"btn btn-info"  %>
 
 
 

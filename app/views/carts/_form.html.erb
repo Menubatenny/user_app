@@ -3,12 +3,15 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs">
+  <div class="form-control">
     <%= f.input :product_name %>
+    <h1 class="mb-3"> </h1>
     <%= f.input :quantity %>
+    <h1 class="mb-3"> </h1>
+    <%= f.button :submit, class:"btn btn-info"%>
   </div>
-
+<h1 class="mb-3"> </h1>
   <div class="form-actions">
-    <%= f.button :submit %>
+    
   </div>
 <% end %>

@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Conform Your Address Details</h1>
+<h1>Confirm Your Address Details</h1>
 
-<table>
+<table  class="table table-success table-striped">
   <thead>
     <tr>
       <th>Pickup address</th>
@@ -16,9 +16,10 @@
       <tr>
         <td><%= detail.pickup_address %></td>
         <td><%= detail.deliver_address %></td>
-        <td><%= link_to 'Show', detail %></td> 
-        <td><%= link_to 'Edit', edit_detail_path(detail) %></td>
-        <td><%= link_to 'Delete', detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+       
+        <td><%= link_to 'Edit', edit_detail_path(detail), class:"btn btn-outline-secondary" %></td>
+        <td><%= link_to 'Delete', detail, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-outline-secondary" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,5 +29,5 @@
 <h1>Thank You for Your Order!!!!</h1>
 <p>
 
-<%= link_to 'Confirm & return to main page',new_user_session_path %>
+<%= link_to 'Confirm & return to main page',new_user_session_path,  class:"btn btn-info" %>
 </p>

@@ -12,17 +12,13 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-control">
     <%= form.label :pickup_address %>
     <%= form.text_field :pickup_address %>
-  </div>
-
-  <div class="field">
+    <h1 class="mb-3"> </h1>
     <%= form.label :deliver_address %>
     <%= form.text_field :deliver_address %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+    <h1 class="mb-3"> </h1>
+    <%= form.submit :submit, class:"btn btn-info"%>
   </div>
 <% end %>

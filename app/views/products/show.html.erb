@@ -9,6 +9,9 @@
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
-
- 
-<%= link_to 'Back', products_path %>
+<h1 class="mb-5">   </h1>
+If you like this product you can click add product and add this to your cart
+<h1 class="mb-1">   </h1>
+<%= link_to 'Add Product',new_cart_path ,  class:"btn btn-info"  %>  
+<h1 class="mb-3">   </h1>
+<%= link_to 'Back', products_path , class:"btn btn-info"%>

@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products List</h1>
+<h1 class="mb-5">Products List</h1>
 
-<table>
-  <thead>
+<table class="table table-striped" style="width: 500px">
+  <thead class="table-dark">
     <tr>
       <th>Order items</th>
       <th>Price</th>
@@ -16,7 +16,7 @@
       <tr>
         <td><%= product.order_items %></td>
         <td><%= product.price %></td>
-        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Show', product, class:"btn btn-outline-secondary" %></td>
         
       </tr>
     <% end %>
@@ -24,6 +24,6 @@
 </table>
 
 <br>
-
-<%= link_to 'Add Product',new_cart_path  %>  |  
-<%= link_to 'Back',new_user_session_path %>
+<h1 class="mb-5">   </h1>
+<%= link_to 'Add Product',new_cart_path ,  class:"btn btn-info"  %>  |  
+<%= link_to 'Back',new_user_session_path,  class:"btn btn-info" %>
