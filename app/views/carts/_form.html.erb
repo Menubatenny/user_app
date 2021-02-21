@@ -3,7 +3,7 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-control">
+  <div class="form-select">
     <%= f.input :product_name %>
     <h1 class="mb-3"> </h1>
     <%= f.input :quantity %>
